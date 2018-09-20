@@ -6,7 +6,7 @@ namespace Rap2hpoutre\LaravelLogViewer;
  * Class LaravelLogViewer
  * @package Rap2hpoutre\LaravelLogViewer
  */
-class LaravelLogViewer
+class LaravelLogViewer implements LaravelLogViewerInterface
 {
     /**
      * @var string file
