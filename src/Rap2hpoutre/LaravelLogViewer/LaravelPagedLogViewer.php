@@ -54,6 +54,59 @@ class LaravelPagedLogViewer implements LaravelLogViewerInterface
         return array_values($result);
     }
 
+    public function setFile($file)
+    {
+        $this->logViewer->setFile($file);
+    }
+
+    public function setFolder($folder)
+    {
+        $this->logViewer->setFolder($folder);
+    }
+
+    /**
+     * @return string
+     */
+    public function getFolderName()
+    {
+        return $this->logViewer->getFolderName();
+    }
+
+    /**
+     * @return string
+     */
+    public function getFileName()
+    {
+        return $this->logViewer->getFileName();
+    }
+
+    /**
+     * @return array
+     */
+    public function getFolders()
+    {
+        return $this->logViewer->getFolders();
+    }
+
+    /**
+     * @param bool $basename
+     * @return array
+     */
+    public function getFolderFiles($basename = false)
+    {
+        return $this->logViewer->getFolderFiles($basename);
+    }
+
+    /**
+     * @param bool $basename
+     * @param string $folder
+     * @return array
+     */
+    public function getFiles($basename = false, $folder = '')
+    {
+        return $this->logViewer->getFiles($basename, $folder);
+    }
+
     protected function draw()
     {
         return $this->input('draw', 1);

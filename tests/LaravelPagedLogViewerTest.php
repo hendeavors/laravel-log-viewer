@@ -82,4 +82,57 @@ class LaravelLogViewierFaker implements LaravelLogViewerInterface
         
         return $logs;
     }
+
+    public function setFile($file)
+    {
+
+    }
+
+    public function setFolder($folder)
+    {
+
+    }
+
+    /**
+     * @return string
+     */
+    public function getFolderName()
+    {
+
+    }
+
+    /**
+     * @return string
+     */
+    public function getFileName()
+    {
+
+    }
+
+    /**
+     * @return array
+     */
+    public function getFolders()
+    {
+
+    }
+
+    /**
+     * @param bool $basename
+     * @return array
+     */
+    public function getFolderFiles($basename = false)
+    {
+
+    }
+
+    /**
+     * @param bool $basename
+     * @param string $folder
+     * @return array
+     */
+    public function getFiles($basename = false, $folder = '')
+    {
+        
+    }
 }
